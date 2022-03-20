@@ -1,0 +1,72 @@
+@import "../../assets/css/var.scss";
+.newsbox {
+  background-color: #edf2f6;
+  padding: 30px 50px;
+  border-radius: 8px;
+  &__title {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .products__more {
+    margin-left: 0;
+  }
+  &__date {
+    color: #838688;
+    line-height: 19px;
+  }
+
+  &.img {
+    display: flex;
+    .newsbox__img {
+      display: block;
+      & + .newsbox__item {
+        padding-left: 20px;
+        @include fb(calc(100% - 150px));
+      }
+    }
+  }
+
+  &__item {
+    @include fb(100%);
+  }
+
+  &__img {
+    display: none;
+    @include fb(150px);
+    height: 179px;
+    background-size: cover;
+    background-position: top center;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .newsbox {
+    padding: 20px;
+    &__date {
+      display: none;
+    }
+    &.img {
+      flex-direction: column;
+      .newsbox__img {
+        display: block;
+        height: 200px;
+        flex-basis: unset;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+        & + .newsbox__item {
+          padding: 0;
+          @include fb(100%);
+        }
+      }
+    }
+  }
+}
