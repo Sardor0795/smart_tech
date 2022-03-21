@@ -3,13 +3,9 @@ import BreadCrumbs from "../components/breadcrumbs";
 import "react-input-range/lib/css/index.css";
 import InputRange from "react-input-range";
 import "../assets/css/filtr.scss";
-import Item from '../components/products/item'
+import Item from "../components/products/item";
 
 const Category = () => {
-  const [filtr, setFiltr] = useState({
-    light: 0,
-    speed: 0,
-  });
   const [price, setPrice] = useState({ min: 0, max: 100 });
   return (
     <div className="container">
@@ -90,12 +86,12 @@ const Category = () => {
         </div>
         <div className="col-9 col-md-12">
           <div className="row col3">
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
-            <Item/>
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
+            <Item />
           </div>
         </div>
       </div>
