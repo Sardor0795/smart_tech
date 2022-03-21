@@ -55,12 +55,12 @@ const Nav = () => {
           <div className="col-9 d-flex">
             <ul className="nav__menu">
               <li>
-                <NavLink to="/">О компании</NavLink>
+                <NavLink to="/about">О компании</NavLink>
                 <NavLink to="/">Акции</NavLink>
                 <NavLink to="/">Рассрочка 0|0|18</NavLink>
                 <NavLink to="/">Сервис и гарантия</NavLink>
                 <NavLink to="/">Опт/дропшиппинг</NavLink>
-                <NavLink to="/">Контакты</NavLink>
+                <NavLink to="/contact">Контакты</NavLink>
               </li>
             </ul>
           </div>
