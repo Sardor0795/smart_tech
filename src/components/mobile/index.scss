@@ -127,7 +127,6 @@
   }
 }
 
-
 @media (max-width: 1024px) {
   .show-mobile .mobile {
     display: flex;
@@ -163,25 +162,24 @@
       }
     }
   }
-  .modal{
-    &__btns{
+  .modal {
+    &__btns {
       display: none;
-      
     }
   }
 }
 
-@media(max-width:767px){
-  .modal{
-    &__box{
+@media (max-width: 767px) {
+  .modal {
+    &__box {
       padding: 20px;
     }
-    &__btns{
+    &__btns {
       display: flex;
     }
   }
-  .mobile{
-    &__link{
+  .mobile {
+    &__link {
       margin: 0px 10px;
     }
   }

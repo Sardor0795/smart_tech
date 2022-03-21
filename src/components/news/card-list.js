@@ -29,8 +29,8 @@ const CardList = () => {
             </Link>
           </div>
           <div className="row">
-            {list.map((item) => (
-              <div className="col-6 col-md-12 mb-2">
+            {list.map((item,index) => (
+              <div key={index} className="col-6 col-md-12 mb-2">
                 <CardNews news={item} />
               </div>
             ))}
