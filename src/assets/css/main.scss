@@ -6,7 +6,7 @@
 }
 
 @import "./var.scss";
-
+@import "./grid.scss";
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap");
 
 body {
@@ -124,28 +124,6 @@ a {
   }
 }
 
-// Grid system
-
-.col-6 {
-  @include fb(50%);
-  padding: 0px 10px;
-}
-
-.col-4 {
-  @include fb(33.33);
-  padding: 0 10px;
-}
-
-.col-3 {
-  @include fb(25%);
-  padding: 0 10px;
-}
-
-.col-9 {
-  @include fb(75%);
-  padding: 0 10px;
-}
-
 .show-mobile {
   display: none;
 }
@@ -156,75 +134,20 @@ a {
   display: block;
 }
 
-@media (max-width: 1024px) {
-  .show-mobile {
-    display: block;
-  }
-
-  .hide {
-    display: flex;
-  }
-
-  .hide-mobile {
-    display: none;
-  }
-
-  .col-md-6 {
-    @include fb(50%);
-    padding: 0px 10px;
-  }
-
-  .col-md-4 {
-    @include fb(33.33);
-    padding: 0 10px;
-  }
-
-  .col-md-3 {
-    @include fb(25%);
-    padding: 0 10px;
-  }
-
-  .col-md-9 {
-    @include fb(75%);
-    padding: 0 10px;
-  }
-
-  .col-md-12 {
-    @include fb(100%);
-    padding: 0 10px;
-  }
-  .container {
-    padding: 0 15px;
-  }
+p {
+  margin-bottom: 15px;
+  line-height: 21px;
 }
 
-@media (max-width: 767px) {
-  .mb-sm-0 {
-    margin-bottom: 0;
-  }
+h5{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 
-  .col-sm-6 {
-    @include fb(50%);
-    padding: 0px 10px;
-  }
-
-  .col-sm-4 {
-    @include fb(33.33);
-    padding: 0 10px;
-  }
-
-  .col-sm-3 {
-    @include fb(25%);
-    padding: 0 10px;
-  }
-
-  .col-sm-9 {
-    @include fb(75%);
-    padding: 0 10px;
-  }
-
-  .col-sm-12 {
-    @include fb(100%);
-    padding: 0 10px;
+.img{
+  &__full{
+    display: block;
+    width: 100%;
   }
 }

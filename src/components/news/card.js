@@ -12,7 +12,7 @@ const CardNews = ({ news }) => {
         }}
       ></div>
       <div className="newsbox__item">
-        <Link to="/" className="newsbox__title">
+        <Link to="/news/2" className="newsbox__title">
           {news.title}
         </Link>
         <div className="newsbox__text">{news.text}</div>

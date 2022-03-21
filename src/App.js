@@ -5,6 +5,8 @@ import Nav from "./components/nav";
 import Footer from "./components/footer";
 import Mobile from "./components/mobile";
 import NewsList from "./pages/NewsList";
+import NewsView from "./pages/NewsView";
+import Page from "./pages/Page";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<NewsList />} />
+        <Route path="/news/:id" element={<NewsView />} />
+        <Route path="/about" element={<Page />} />
       </Routes>
       <Footer/>
       <Mobile/>

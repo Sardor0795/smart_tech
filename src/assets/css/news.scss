@@ -1,0 +1,26 @@
+@import "./main.scss";
+
+.page {
+  &__category {
+    background-color: #edf2f6;
+    padding: 40px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      margin-bottom: 30px;
+      margin-right: 80px;
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
