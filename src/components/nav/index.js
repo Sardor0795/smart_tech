@@ -68,7 +68,7 @@ const Nav = () => {
         <ul className={`nav__list ${catToggle ? "show" : ""}`}>
           {list.map((item, index) => (
             <li key={index}>
-              <NavLink to={item.link}>
+              <NavLink to="/category">
                 <img src={require("../../assets/img/" + item.icon)} alt="img" />
                 {item.title}
               </NavLink>
@@ -79,9 +79,5 @@ const Nav = () => {
     </div>
   );
 };
-
-
-
-
 
 export default Nav;

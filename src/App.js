@@ -7,6 +7,7 @@ import Mobile from "./components/mobile";
 import NewsList from "./pages/NewsList";
 import NewsView from "./pages/NewsView";
 import Page from "./pages/Page";
+import Category from "./pages/Category";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/news" element={<NewsList />} />
         <Route path="/news/:id" element={<NewsView />} />
         <Route path="/*" element={<Page />} />
+        <Route path="/category" element={<Category />} />
       </Routes>
       <Footer/>
       <Mobile/>

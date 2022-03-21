@@ -1,5 +1,9 @@
 @import "../../assets/css/var.scss";
 
+.col3 .card {
+  @include fb(33.33%);
+}
+
 .card {
   padding: 20px;
   border: 1px solid #eaeaf0;
