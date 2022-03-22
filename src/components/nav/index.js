@@ -56,8 +56,8 @@ const Nav = () => {
             <ul className="nav__menu">
               <li>
                 <NavLink to="/about">О компании</NavLink>
-                <NavLink to="/">Акции</NavLink>
-                <NavLink to="/">Рассрочка 0|0|18</NavLink>
+                <NavLink to="/promo">Акции</NavLink>
+                <NavLink to="/credit">Рассрочка 0|0|18</NavLink>
                 <NavLink to="/">Сервис и гарантия</NavLink>
                 <NavLink to="/">Опт/дропшиппинг</NavLink>
                 <NavLink to="/contact">Контакты</NavLink>

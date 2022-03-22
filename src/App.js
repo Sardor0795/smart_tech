@@ -8,6 +8,8 @@ import NewsList from "./pages/NewsList";
 import NewsView from "./pages/NewsView";
 import Page from "./pages/Page";
 import Category from "./pages/Category";
+import PromoList from "./pages/Promo";
+import Fav from "./pages/Fav";
 
 function App() {
   return (
@@ -18,11 +20,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/news" element={<NewsList />} />
         <Route path="/news/:id" element={<NewsView />} />
-        <Route path="/*" element={<Page />} />
         <Route path="/category" element={<Category />} />
+        <Route path="/promo" element={<PromoList />} />
+        <Route path="/fav" element={<Fav />} />
+        <Route path="/*" element={<Page />} />
       </Routes>
-      <Footer/>
-      <Mobile/>
+      <Footer />
+      <Mobile />
     </BrowserRouter>
   );
 }
