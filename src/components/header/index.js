@@ -32,16 +32,16 @@ const Header = () => {
               </button>
               <input placeholder="Поиск" type="text"></input>
             </form>
-            <Link to="/" className="btn no">
+            <Link to="/seen" className="btn no">
               <img alt="img" src={eye} />
             </Link>
-            <Link to="/" className="btn no">
+            <Link to="/fav" className="btn no">
               <img alt="img" src={like} />
             </Link>
-            <Link to="/" className="btn no ">
+            <Link to="/compare" className="btn no ">
               <img alt="img" src={compare} />
             </Link>
-            <Link to="/" className="btn no cart">
+            <Link to="/cart" className="btn no cart">
               <img alt="img" src={cart} />
             </Link>
             <button className="btn auth">Войти</button>

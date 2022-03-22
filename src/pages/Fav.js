@@ -1,7 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import BreadCrumbs from "../components/breadcrumbs";
 import Item from "../components/products/item";
+import "../assets/css/fav.scss";
 
 const Fav = () => {
   return (
@@ -11,7 +12,7 @@ const Fav = () => {
         <div className="btitle mb-3">Избранное</div>
         <div className="row">
           <div className="col-3 col-md-12">
-            <ul className="menu">
+            <ul className="menu mb-3">
               <li>
                 <NavLink to="/">Общие сведения</NavLink>
               </li>
@@ -31,9 +32,15 @@ const Fav = () => {
                 <NavLink to="/">Выйти</NavLink>
               </li>
             </ul>
+            <div className="authbox">
+              <div className="authbox__title">
+                Войдите или зарегистрируйтесь
+              </div>
+              <Link to="/">Войти</Link>
+            </div>
           </div>
           <div className="col-9 col-md-12">
-            <div className="d-flex justify-content-between">
+            <div className="row mb-2 justify-content-between">
               <select className="select">
                 <option>Все товары</option>
               </select>

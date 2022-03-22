@@ -10,6 +10,7 @@ import Page from "./pages/Page";
 import Category from "./pages/Category";
 import PromoList from "./pages/Promo";
 import Fav from "./pages/Fav";
+import Seen from "./pages/Seen";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/category" element={<Category />} />
         <Route path="/promo" element={<PromoList />} />
         <Route path="/fav" element={<Fav />} />
+        <Route path="/seen" element={<Seen />} />
         <Route path="/*" element={<Page />} />
       </Routes>
       <Footer />
