@@ -1,0 +1,51 @@
+@import "../../assets/css/var.scss";
+
+.contact {
+  &__list {
+    background-color: #edf2f6;
+    border-radius: 8px;
+  }
+  &__item {
+    padding: 15px 30px;
+    &:hover {
+      background-color: #dae4ed;
+    }
+  }
+  &__address {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  &__phone {
+    color: $dark-blue;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__email {
+    border-top: 1px solid #c8cacb;
+    color: $dark-blue;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 18px;
+    padding-bottom: 30px;
+    img{
+        margin-right: 10px;
+    }
+  }
+  &__worktime{
+      display: flex;
+      img{
+          margin-right: 10px;
+      }
+      &--top{
+          color: #838688;
+          margin-bottom: 10px;
+      }
+      &--bottom{
+          font-size: 20px;
+          font-weight: 600;
+      }
+  }
+  &__body{
+      padding: 0 30px 30px;
+  }
+}

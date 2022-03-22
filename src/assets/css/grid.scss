@@ -24,6 +24,10 @@
   @include fb(25%);
   padding: 0 10px;
 }
+.col-8 {
+  @include fb(66.66%);
+  padding: 0 10px;
+}
 
 .col-9 {
   @include fb(75%);
@@ -45,6 +49,10 @@
 
   .col-md-6 {
     @include fb(50%);
+    padding: 0px 10px;
+  }
+  .col-md-8 {
+    @include fb(66.66%);
     padding: 0px 10px;
   }
 
@@ -89,6 +97,10 @@
 
   .col-sm-6 {
     @include fb(50%);
+    padding: 0px 10px;
+  }
+  .col-sm-8 {
+    @include fb(66.66%);
     padding: 0px 10px;
   }
 

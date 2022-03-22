@@ -23,7 +23,7 @@ ul {
 }
 
 input:focus {
-  outline: none;
+  outline-color: $blue;
 }
 
 a {
@@ -165,23 +165,29 @@ h4 {
   }
 }
 
-.sm-order-2 {
-  order: 2;
-}
-.sm-order-1 {
-  order: 1;
-}
-
 @media (max-width: 1024px) {
   .show-mobile {
     display: block;
   }
-
+  .sm-order-2 {
+    order: 2;
+  }
+  .sm-order-1 {
+    order: 1;
+  }
   .hide {
     display: flex;
   }
 
   .hide-mobile {
     display: none;
+  }
+
+  .mb-8 {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    margin-top: 30px;
   }
 }
